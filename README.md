@@ -22,7 +22,7 @@ xcflow setup
 ```yaml
 steps:
   - uses: actions/checkout@v7
-  - uses: OlafAndreas/xcflow-action@v0.2.10
+  - uses: OlafAndreas/xcflow-action@v0.4.1
   - run: xcflow plan
     env:
       ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
@@ -34,7 +34,7 @@ The secrets are an App Store Connect **team** API key: its id, issuer id, and th
 
 ## What the action does
 
-Downloads the xcflow 0.2.10 release for the runner (Linux x86_64 or arm64), verifies its SHA-256 checksum, and adds `xcflow` to the `PATH`. Nothing else: no repo access, no secrets, no network beyond the GitHub release. Runs on `ubuntu-latest`.
+Downloads the xcflow 0.4.1 release for the runner (Linux x86_64 or arm64), verifies its SHA-256 checksum, and adds `xcflow` to the `PATH`. Nothing else: no repo access, no secrets, no network beyond the GitHub release. Runs on `ubuntu-latest`.
 
 Action `vX.Y.Z` installs xcflow `X.Y.Z`. Each xcflow release publishes a matching tag here.
 
